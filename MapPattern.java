@@ -6,7 +6,7 @@ import java.util.*;
      
        Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
-        for (int i = 0; i <n; i++) {
+        for (int i = 0; i < n; i++) {
             String nameString = scanner.next();
             int mobileNumber = scanner.nextInt();
             map.put(nameString, mobileNumber);

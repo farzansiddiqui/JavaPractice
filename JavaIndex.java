@@ -19,8 +19,10 @@
 
 
 
+
 public class JavaIndex {
     public static boolean checkValue = false;
+
 public static void main(String[] args) {
     int[] arrayValue = {1, 5, 6 , 8, 4};
     int targetValue = 7;
@@ -29,5 +31,6 @@ public static void main(String[] args) {
    
 }  
 }
+ }
 
-}
+
