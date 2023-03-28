@@ -19,7 +19,7 @@ public class ArrayReverse {
         }
             printArray(arrayNumber);
     }
-    public static void printArray(int[] arrayNumber){
+    public static void printArray(int[] arrayNumber) {
         for (int i = 0; i < arrayNumber.length; i++) {
             System.out.print(arrayNumber[i]+" ");
         }
