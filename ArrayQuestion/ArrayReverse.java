@@ -4,14 +4,14 @@ import java.util.Arrays;
 
 public class ArrayReverse {
     public static void main(String[] args) {
-        starPattern(5);
-        starPatternOpposite(5);
+       // starPattern(5);
+        //starPatternOpposite(5);
         int[] arrayNumber = {100,15,500,6,7,8,10};
         findLargestArray(arrayNumber);
         for (int i = 0; i < arrayNumber.length-1; i++) {
                 for (int j = i+1; j < arrayNumber.length; j++) {
                     if (arrayNumber[j] < arrayNumber[i]) {
-                        System.out.println(arrayNumber[i]+" "+arrayNumber[j]);
+                    
                         int temp = arrayNumber[i];
                         arrayNumber[i] = arrayNumber[j];
                         arrayNumber[j] = temp;

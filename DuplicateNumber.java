@@ -4,7 +4,18 @@ import java.util.Arrays;
 public class DuplicateNumber {
     public static void main(String[] args) {
         int[] number = {1, 5 , 5, 7, 8 , 7, 45 , 78, 78,55,7};
-        findDuplicateNumber(number);
+        //findDuplicateNumber(number);
+        ArrayList<Integer> aList = new ArrayList<>();
+        for (int i = 0; i < number.length; i++) {
+            aList.add(number[i]);   
+        }
+        for (int integer : number) {
+            if (!aList.contains(integer)) {
+               aList.add(integer);
+            }
+            
+        }
+       
         
     }
     public static void findDuplicateNumber(int[] number){
@@ -18,9 +29,8 @@ public class DuplicateNumber {
                     arrayList.add(i);
                 }
             }
-            System.out.println(Arrays.toString(number));
            
-           // System.out.println(arrayList.toString());
+        
             printArray(arrayList);
     }
     public static void printArray(ArrayList<Integer> display){
